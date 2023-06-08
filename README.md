@@ -1,6 +1,6 @@
-# Data Science Project
+# Machine Learning Project
 
-This repository contains my learning process, small projects, and big projects related to data science.
+This repository contains my learning process, small projects, and big projects related to Machine Learning, Artificial Intelligence, Deep Learning, Computer Vision, etc.
 
 ## Table of Contents
 
@@ -13,15 +13,15 @@ This repository contains my learning process, small projects, and big projects r
 
 ## Description
 
-This repository is dedicated to showcasing my journey in data science. It contains code and documentation for various small and big projects that I work on as I learn and practice different concepts and techniques related to data analysis, machine learning, and other data science topics.
+This repository is dedicated to showcasing my journey in machine learning. It contains code and documentation for various small and big projects that I work on as I learn and practice different concepts and techniques related to computer vision, machine learning, and other machine learning topics.
 
 ## Projects
 
 Here's a list of the projects currently included in this repository:
 
-- **Project 1:** _Brief description of project 1._
-- **Project 2:** _Brief description of project 2._
-- **Project 3:** _Brief description of project 3._
+- **Calculate Black Jack Hand:** _Calculate who is better hand in black jack._
+- **Machine Learning Project 1:** _Determine the relationship between two sequential._
+- **Machine Learning Projcet 2:** _Classifies an image input from MNIST._
 - ...
 
 Each project should have its own directory in the repository, with its own README file and any necessary code, data, or other resources.
