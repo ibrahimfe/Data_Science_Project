@@ -22,8 +22,7 @@ def dfs(graph, start, goal, visited=None):
             if neighbor not in visited:
                 dfs(graph, neighbor, goal ,visited)
                 
-    
-
-# Start DFS from node 'A'
-print("Depth-First Search starting from 'C':")
-dfs(graph, 'F', 'F')
+# Start DFS
+start = input("Choose node to start from : ")
+goal = input("Choose node as a goal : ")
+dfs(graph, start, goal)
