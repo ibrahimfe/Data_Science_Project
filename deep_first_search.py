@@ -11,18 +11,27 @@ graph = {
 def dfs(graph, start, goal, visited=None):
     if visited is None:
         visited = set()
-    if goal in visited:
-        return 0
 
     if start not in visited:
-        print(start, end=' ')
         visited.add(start)
+
+        if start == goal:
+            return [start]  # Found the goal, return a list with just the goal
 
         for neighbor in graph[start]:
             if neighbor not in visited:
-                dfs(graph, neighbor, goal ,visited)
-                
+                path = dfs(graph, neighbor, goal, visited)
+                if path:
+                    return [start] + path  # Add the current node to the path and return it
+
+    return []  # Return an empty list if the goal is not found
+
 # Start DFS
 start = input("Choose node to start from : ")
 goal = input("Choose node as a goal : ")
-dfs(graph, start, goal)
+path = dfs(graph, start, goal)
+
+if path:
+    print("Path from", start, "to", goal, ":", "->".join(path))
+else:
+    print("No path found from", start, "to", goal)
